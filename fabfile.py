@@ -100,6 +100,7 @@ def gh_pages():
     """Publish to GitHub Pages"""
     rebuild()
     local("ghp-import -b {github_pages_branch} {deploy_path} -p".format(**env))
+    local("git status && git add . && git commit -m 'fab update'")
     local("git checkout {github_pages_branch}".format(**env))
     local("touch CNAME .gitignore")
     local("echo 'blog.pavelburns.ru' >> CNAME")
