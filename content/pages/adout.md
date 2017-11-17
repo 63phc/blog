@@ -7,6 +7,3 @@ A nice about me page. How find me:
 - __[fb](https://fb.com/63phc)__ - high quality and fast image
 - __[tw](https://twitter.com/63phc)__ - high quality and fast image
 - __[github](https://github.com/63phc)__ - high quality and fast image
-- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
-- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
-- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
