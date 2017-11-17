@@ -57,11 +57,11 @@ EXTRA_PATH_METADATA = {
 AUTHORS_BIO = {
   "pavel burns": {
     "name": "Pavel Burns",
-    "cover": "https://arulrajnet.github.io/attila-demo/assets/images/avatar.png",
-    "image": "https://arulrajnet.github.io/attila-demo/assets/images/avatar.png",
+    "cover": "https://blog.pavelburns.com/assets/img/ava.jpg",
+    "image": "https://blog.pavelburns.com/assets/img/ava.jpg",
     "website": "http://blog.pavelburns.ru",
     "location": "Russian",
-    "bio": "Пишу код в всех точках мира, работаю на фрилансе в команде NoNameDreamTeam"
+    "bio": "Пишу код во всех точках мира, работаю на фрилансе в команде NoNameDreamTeam"
   }
 }
 
@@ -205,7 +205,7 @@ GOOGLE_ANALYTICS = "UA-3546274-12"
 # Specified as a list of 2-tuples of (from, to) which are applied in order.
 
 
-THEME = 'themes/theme'
+THEME = 'themes/attila'
 
 
 
