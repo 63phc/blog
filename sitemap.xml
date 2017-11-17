@@ -5,21 +5,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2017-11-17T12:04:44-00:00</lastmod>
+<lastmod>2017-11-17T12:06:28-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2017-11-17T12:04:44-00:00</lastmod>
+<lastmod>2017-11-17T12:06:28-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2017-11-17T12:04:44-00:00</lastmod>
+<lastmod>2017-11-17T12:06:28-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -53,13 +53,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/tag/off-topik</loc>
-<lastmod>2017-11-15T21:10:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>/tag/django</loc>
 <lastmod>2017-11-16T21:10:00+02:30</lastmod>
 <changefreq>daily</changefreq>
@@ -69,6 +62,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/tag/translite</loc>
 <lastmod>2017-11-16T21:10:00+02:30</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/off-topik</loc>
+<lastmod>2017-11-15T21:10:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
