@@ -13,5 +13,7 @@ git clone --recursive https://github.com/getpelican/pelican-plugins
 ```
 pelican -d -s pelicanconf.py
 ghp-import output
+ghp-import -b gh-pages output
+
 
 ```
