@@ -109,3 +109,4 @@ def gh_pages():
     local("git status && git add . && git commit -m 'fab update'")
     local("git push origin {github_pages_branch}".format(**env))
     local("git checkout master")
+    local("echo 'ALL OKAY'")
