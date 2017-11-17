@@ -57,8 +57,8 @@ EXTRA_PATH_METADATA = {
 AUTHORS_BIO = {
   "pavel burns": {
     "name": "Pavel Burns",
-    "cover": "https://blog.pavelburns.com/assets/img/ava.jpg",
-    "image": "https://blog.pavelburns.com/assets/img/ava.jpg",
+    "cover": "https://github.com/63phc/blog/blob/gh-pages/assets/img/ava.jpg",
+    "image": "https://github.com/63phc/blog/blob/gh-pages/assets/img/ava.jpg",
     "website": "http://blog.pavelburns.ru",
     "location": "Russian",
     "bio": "Пишу код во всех точках мира, работаю на фрилансе в команде NoNameDreamTeam"

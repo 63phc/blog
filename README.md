@@ -11,9 +11,7 @@ git clone --recursive https://github.com/getpelican/pelican-plugins
 ```
 #### deploy 
 ```
-pelican -d -s pelicanconf.py
+pelican -s pelicanconf.py
 ghp-import output
 ghp-import -b gh-pages output
-
-
 ```
