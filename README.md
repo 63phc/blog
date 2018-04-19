@@ -2,3 +2,5 @@
 
 
 * pelican content
+* python -m pelican.server
+
