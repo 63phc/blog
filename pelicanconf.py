@@ -15,7 +15,7 @@ PATH = 'content'
 
 TIMEZONE = 'Europe/Moscow'
 DEFAULT_DATE_FORMAT = '%d %b %Y'
-DEFAULT_LANG = 'ru'
+DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -37,14 +37,12 @@ SOCIAL = (('twitter', 'https://twitter.com/63phc'),
           ('facebook', 'https://facebook.com/63phc'),
           ('envelope', 'mailto:pavel.burns@gmail.com'))
 
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = 3
 PAGINATION_PATTERNS = (
     (1, '{base_name}/', '{base_name}/index.html'),
     (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
 )
 
-# THEME ATTILA CONF
-COLOR_SCHEME_CSS = 'monokai.css'
 
 STATIC_PATHS = ['assets']
 
@@ -68,20 +66,23 @@ AUTHORS_BIO = {
 # Post and Pages path
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}.html'
-PAGE_URL = 'pages/{slug}/'
-PAGE_SAVE_AS = 'pages/{slug}/index.html'
-YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
-MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/index.html'
+
+# PAGE_URL = 'pages/{slug}/'
+# PAGE_SAVE_AS = 'pages/{slug}/index.html'
+
+# YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
+# MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/index.html'
 
 # Tags and Category path
 CATEGORY_URL = 'category/{slug}'
 CATEGORY_SAVE_AS = 'category/{slug}/index.html'
 CATEGORIES_SAVE_AS = 'catgegories.html'
+
 TAG_URL = 'tag/{slug}'
 TAG_SAVE_AS = 'tag/{slug}/index.html'
 TAGS_SAVE_AS = 'tags.html'
 
-# Author
+#Author
 AUTHOR_URL = 'author/{slug}'
 AUTHOR_SAVE_AS = 'author/{slug}/index.html'
 AUTHORS_SAVE_AS = 'authors.html'
@@ -92,11 +93,11 @@ PLUGIN_PATHS = [
   'pelican-plugins'
 ]
 
-PLUGINS = [
-  'sitemap',
-  'neighbors',
-  'assets'
-]
+# PLUGINS = [
+#   'sitemap',
+#   'neighbors',
+#   'assets'
+# ]
 
 # Sitemap
 SITEMAP = {
@@ -121,6 +122,8 @@ GOOGLE_ANALYTICS = "UA-3546274-12"
 
 # END THEME ATTILA CONF
 
+THEME = 'themes/aib'
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
@@ -141,7 +144,7 @@ GOOGLE_ANALYTICS = "UA-3546274-12"
 # DEFAULT_DATE_FORMAT = '%a %d %B %Y'
 
 # DISPLAY_PAGES_ON_MENU = True
-# DISPLAY_CATEGORIES_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = True
 
 # Where to output the generated files.
 # OUTPUT_PATH = 'output/'
@@ -169,20 +172,28 @@ GOOGLE_ANALYTICS = "UA-3546274-12"
 
 # The URL to refer to an article.
 # ARTICLE_URL = '{slug}.html'
+
 # The place where we will save an article.
 # ARTICLE_SAVE_AS = '{slug}.html'
+
 # The URL to refer to an article which doesn’t use the default language.
 # ARTICLE_LANG_URL = '{slug}-{lang}.html'
+
 # The place where we will save an article which doesn’t use the default language.
 # ARTICLE_LANG_SAVE_AS = '{slug}-{lang}.html'
+
 # The URL to refer to an article draft.
 # DRAFT_URL = 'drafts/{slug}.html'
+
 # The place where we will save an article draft.
 # DRAFT_SAVE_AS = 'drafts/{slug}.html'
+
 # The URL to refer to an article draft which doesn’t use the default language.
 # DRAFT_LANG_URL = 'drafts/{slug}-{lang}.html'
+
 # The place where we will save an article draft which doesn’t use the default language.
 # DRAFT_LANG_SAVE_AS = 'drafts/{slug}-{lang}.html'
+
 # The URL we will use to link to a page.
 # PAGE_URL = 'pages/{slug}.html'
 # The location we will save the page.
@@ -203,14 +214,6 @@ GOOGLE_ANALYTICS = "UA-3546274-12"
 # DAY_ARCHIVE_SAVE_AS = ''	The location to save per-day archives of your posts.
 # SLUG_SUBSTITUTIONS = ()	Substitutions to make prior to stripping out non-alphanumerics when generating slugs.
 # Specified as a list of 2-tuples of (from, to) which are applied in order.
-
-
-THEME = 'themes/attila'
-
-
-
-
-
 
 
 
