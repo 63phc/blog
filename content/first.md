@@ -1,9 +1,10 @@
 title: Лети как ветер булзай
-date: 2017-11-15 21:10
+date: 2018-02-07 21:10
 author: pavel burns
-tags: офф топик
-slug: fly as air bulzai
+tags: ass, publishing
+slug: fly_as_air_bulzai
 keywords: coding
+category: Yeah
 headline: или почему я выбрал Pelican
 og_image: https://habrastorage.org/webt/26/iw/te/26iwte8ajw3kxx9cqfoyeugdo1g.jpeg
 

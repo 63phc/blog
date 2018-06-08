@@ -3,3 +3,6 @@ themes
 output
 pelican-plugins
 .idea
+/Envs/
+/Pipfile.lock
+/__pecache__
