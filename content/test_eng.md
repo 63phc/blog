@@ -1,12 +1,14 @@
-title: Featured Images for the detail View 
-date: 2015-11-20 21:54 
+title: Title huitle
+lang: en
+date: 2018-10-12 21:54 
 author: pavel burns 
-tags: Travel 
+tags: OTHER 
 category: travel 
-slug: featured-images-for-the-detail-view 
+slug: test_translite 
 og_image: assets/images/4BQLVS45VD.jpg
 
 Hi there and welcome to Attila - theme for the blogging platform Pelican. Attila is open source and can be found on GitHub. This article is just a demo post and shows you the style of common used elements.
+
 
 Headline 1
 Headline 2

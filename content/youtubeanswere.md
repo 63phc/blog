@@ -2,6 +2,7 @@ title: Answere quations
 date: 2017-11-20 21:54
 author: pavel burns
 tags: General
+category: codding
 slug: answere
 
 # Welcome to StackEdit!

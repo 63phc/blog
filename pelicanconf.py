@@ -15,6 +15,7 @@ PATH = 'content'
 
 TIMEZONE = 'Europe/Moscow'
 DEFAULT_DATE_FORMAT = '%d %b %Y'
+
 DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
@@ -25,7 +26,6 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
          ('Jinja2', 'http://jinja.pocoo.org/'),
@@ -35,15 +35,14 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 SOCIAL = (('twitter', 'https://twitter.com/63phc'),
           ('github', 'https://github.com/63phc'),
           ('facebook', 'https://facebook.com/63phc'),
+          ('gist', 'https://gist.github.com/63phc'),
           ('envelope', 'mailto:pavel.burns@gmail.com'))
 
-DEFAULT_PAGINATION = 3
+DEFAULT_PAGINATION = 2
 PAGINATION_PATTERNS = (
     (1, '{base_name}/', '{base_name}/index.html'),
     (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
 )
-
-
 STATIC_PATHS = ['assets']
 
 EXTRA_PATH_METADATA = {
@@ -64,11 +63,13 @@ AUTHORS_BIO = {
 }
 
 # Post and Pages path
-ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
-ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}.html'
+ARTICLE_URL = 'articles/{slug}.html'
+# ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
+# ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}.html'
+ARTICLE_SAVE_AS = 'articles/{slug}.html'
 
-# PAGE_URL = 'pages/{slug}/'
-# PAGE_SAVE_AS = 'pages/{slug}/index.html'
+PAGE_URL = 'pages/{slug}/'
+PAGE_SAVE_AS = 'pages/{slug}/index.html'
 
 # YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
 # MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/index.html'
@@ -83,21 +84,36 @@ TAG_SAVE_AS = 'tag/{slug}/index.html'
 TAGS_SAVE_AS = 'tags.html'
 
 #Author
-AUTHOR_URL = 'author/{slug}'
-AUTHOR_SAVE_AS = 'author/{slug}/index.html'
-AUTHORS_SAVE_AS = 'authors.html'
+# AUTHOR_URL = 'author/{slug}'
+# AUTHOR_SAVE_AS = 'author/{slug}/index.html'
+# AUTHORS_SAVE_AS = 'authors.html'
 
 ### Plugins
 
 PLUGIN_PATHS = [
-  'pelican-plugins'
+  'plugins'
 ]
 
-# PLUGINS = [
-#   'sitemap',
-#   'neighbors',
-#   'assets'
-# ]
+# http://docs.getpelican.com/en/3.6.3/plugins.html#plugins
+PLUGINS = ['vendor.sitemap', 'vendor.nieghbors', ]
+# PLUGINS = ['vendor.i18n_subsites', 'vendor.sitemap', 'vendor.nieghbors', ]
+
+I18N_SUBSITES = {
+
+    'ru': {
+        'SITENAME': 'русс сайт найм',
+        },
+    'en': {
+        'SITENAME': 'eng site name',
+        },
+    'cz': {
+        'SITENAME': 'Testovací stránka',
+        'AUTHOR': 'Test Testovič',
+        'I18N_UNTRANSLATED_PAGES': 'remove',
+        'I18N_UNTRANSLATED_ARTICLES': 'keep',
+        },
+    }
+
 
 # Sitemap
 SITEMAP = {
@@ -120,9 +136,8 @@ DISQUS_SITENAME = "63phc"
 # Analytics
 GOOGLE_ANALYTICS = "UA-3546274-12"
 
-# END THEME ATTILA CONF
-
 THEME = 'themes/aib'
+
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
@@ -143,15 +158,11 @@ THEME = 'themes/aib'
 
 # DEFAULT_DATE_FORMAT = '%a %d %B %Y'
 
-# DISPLAY_PAGES_ON_MENU = True
+DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = True
 
 # Where to output the generated files.
 # OUTPUT_PATH = 'output/'
-
-# http://docs.getpelican.com/en/3.6.3/plugins.html#plugins
-# PLUGINS = []
-# PLUGIN_PATHS = []
 
 # http://docs.getpelican.com/en/3.6.3/settings.html#template-pages
 # TEMPLATE_PAGES = None
